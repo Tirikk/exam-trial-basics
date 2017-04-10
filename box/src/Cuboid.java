@@ -8,4 +8,8 @@ public class Cuboid {
     this.b = b;
     this.c = c;
   }
+
+  public int getSurface() {
+    return 2 * a * b + 2 * a * c + 2 * b * c;
+  }
 }
