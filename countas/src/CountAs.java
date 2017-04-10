@@ -12,9 +12,13 @@ public class CountAs {
 
     // example: on the input "afile.txt" the function should return 28 - print this result
     // example: on the input "not-a-file" the function should return 0 - print this result
+
+    System.out.println(countAs("afile.txt"));
+    System.out.println(countAs("not-a-file"));
+
   }
 
-  public static int countAs(String filename) {
+  private static int countAs(String filename) {
     Path filePath = Paths.get(filename);
     List<String> initList;
     try {
