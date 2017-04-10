@@ -9,11 +9,11 @@ public class Cuboid {
     this.c = c;
   }
 
-  public int getSurface() {
+  int getSurface() {
     return 2 * a * b + 2 * a * c + 2 * b * c;
   }
 
-  public int getVolume() {
+  int getVolume() {
     return a * b * c;
   }
 }
