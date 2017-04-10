@@ -29,5 +29,16 @@ public class PirateCounter{
     // And returns a list of names containing the pirates that
     // - have wooden leg and
     // - have more than 15 gold
+
+  }
+
+  private static List<String> WhosPegLeggedAndRich(List<Pirate> listOfPirates) {
+    List<String> listToOutput = new ArrayList<>();
+    for (Pirate  pirate : listOfPirates) {
+      if (pirate.hasWoodenLeg && pirate.gold > 15) {
+        listToOutput.add(pirate.name);
+      }
+    }
+    return listToOutput;
   }
 }
