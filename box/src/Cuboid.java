@@ -1,19 +1,19 @@
 public class Cuboid {
-  int a;
-  int b;
-  int c;
+  int width;
+  int height;
+  int depth;
 
   Cuboid(int a, int b, int c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
+    this.width = a;
+    this.height = b;
+    this.depth = c;
   }
 
   int getSurface() {
-    return 2 * a * b + 2 * a * c + 2 * b * c;
+    return 2 * width * height + 2 * width * depth + 2 * height * depth;
   }
 
   int getVolume() {
-    return a * b * c;
+    return width * height * depth;
   }
 }
