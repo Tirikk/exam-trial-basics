@@ -11,7 +11,7 @@ class Pirates {
     this.gold = gold;
   }
 
-  static List<String> whosPegLeggedAndRich(List<Pirates> listOfPirates) {
+  static List<String> hasWoodenLegAndGold(List<Pirates> listOfPirates) {
     List<String> listToOutput = new ArrayList<>();
     for (Pirates pirate : listOfPirates) {
       if (pirate.hasWoodenLeg && pirate.gold > 15) {

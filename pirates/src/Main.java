@@ -17,6 +17,6 @@ public class Main {
     // - have wooden leg and
     // - have more than 15 gold
 
-    System.out.println(Pirates.whosPegLeggedAndRich(pirates));
+    System.out.println(Pirates.hasWoodenLegAndGold(pirates));
   }
 }
