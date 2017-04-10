@@ -14,11 +14,20 @@ public class CountAs {
     // example: on the input "not-a-file" the function should return 0 - print this result
   }
 
-  public static int CountAs(String filename) {
+  public static int countAs(String filename) {
     Path filePath = Paths.get(filename);
     List<String> initList;
     try {
       initList = Files.readAllLines(filePath);
+      int noOfAs = 0;
+      for (String line : initList) {
+        for (int i = 0; i < line.length(); i++) {
+          if (line.charAt(i) == 'a') {
+            noOfAs++;
+          }
+        }
+      }
+      return noOfAs;
     } catch (IOException e) {
       return 0;
     }
