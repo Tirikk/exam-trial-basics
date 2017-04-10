@@ -32,4 +32,9 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer:
+I can use the Math.random function, and multiply it by the upper bound of the range I want my number to be in.
+Or I can import the Random class, and use the .nextInt() function of it.
+If I need a random number with different digits (4 of them, for example), I can create a list, fill it with numbers from 0 to 9,
+shuffle that list with the collections.shuffle() function, then iterate through the first 4 elements of the list, concat them to a string,
+and cast that string to an Integer.
