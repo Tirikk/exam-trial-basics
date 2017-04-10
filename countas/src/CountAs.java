@@ -26,7 +26,7 @@ public class CountAs {
       int noOfAs = 0;
       for (String line : initList) {
         for (int i = 0; i < line.length(); i++) {
-          if (line.charAt(i) == 'a') {
+          if (line.charAt(i) == 'a' | line.charAt(i) == 'A') {
             noOfAs++;
           }
         }
