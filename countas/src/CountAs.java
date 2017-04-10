@@ -1,3 +1,9 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+
 public class CountAs {
   public static void main(String[] args) {
     // Create a function that takes a filename as string parameter,
@@ -6,5 +12,15 @@ public class CountAs {
 
     // example: on the input "afile.txt" the function should return 28 - print this result
     // example: on the input "not-a-file" the function should return 0 - print this result
+  }
+
+  public static int CountAs(String filename) {
+    Path filePath = Paths.get(filename);
+    List<String> initList;
+    try {
+      initList = Files.readAllLines(filePath);
+    } catch (IOException e) {
+      return 0;
+    }
   }
 }
